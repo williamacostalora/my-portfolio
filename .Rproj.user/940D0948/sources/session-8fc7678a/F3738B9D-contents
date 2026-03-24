@@ -6,7 +6,7 @@ categories:
   - Python
   - Healthcare Equity
   - Data Analysis
-date: 2025-02-01
+date: 2026-03-23
 about:
   template: solana
   image: featured.jpeg
@@ -32,4 +32,4 @@ We replicated findings from peer-reviewed literature showing Black patients were
 
 ## Links
 
-- [GitHub Repo](https://github.com/williamacostalora/pulse-ox-bias)
+- [GitHub Repo](https://colab.research.google.com/drive/1NC_byKF1y4blrWN8RDXsgPcwLY9JAchx?usp=sharing)

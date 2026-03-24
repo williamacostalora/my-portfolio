@@ -3,7 +3,7 @@
     "path": "~/Desktop/my-portfolio/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "3526993256",
+    "hash": "1220891682",
     "contents": "",
     "dirty": false,
     "created": 1774318554809.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "40,3",
-        "scrollLine": "20"
+        "cursorPosition": "10,48",
+        "scrollLine": "7"
     },
     "folds": "",
-    "lastKnownWriteTime": 1774318952,
+    "lastKnownWriteTime": 1774323207,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1774318952123,
+    "last_content_update": 1774323207506,
     "read_only": false,
     "read_only_alternatives": []
 }

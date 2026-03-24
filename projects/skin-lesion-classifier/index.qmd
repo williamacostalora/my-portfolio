@@ -6,7 +6,7 @@ categories:
   - Deep Learning
   - Python
   - Healthcare Equity
-date: 2025-04-01
+date: 2026-03-23
 about:
   template: solana
   image: featured.jpg
@@ -36,4 +36,4 @@ Dataset composition drives model fairness more than architecture choice. A model
 
 ## Links
 
-- [GitHub Repo](https://github.com/williamacostalora/skin-lesion-classifier)
+- [GitHub Repo](https://colab.research.google.com/drive/1QZ61J--Bj7Y0wsscgp0LXr3WBp2rEi2p?usp=sharing)

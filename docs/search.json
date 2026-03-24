@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWhat Out for Undergrad Taught Me About Showing Up\n\n\n\nCareer\n\nIdentity\n\nCommunity\n\n\n\nReflections on attending and returning to O4U Engineering & Sciences as a Campus Ambassador.\n\n\n\n\n\nMar 1, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWhat Out for Undergrad Taught Me About Showing Up\n\n\n\nCareer\n\nIdentity\n\nCommunity\n\n\n\nReflections on attending and returning to O4U Engineering & Sciences as a Campus Ambassador.\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -102,7 +102,7 @@
     "href": "posts/o4u_post/index.html#coming-back-as-an-ambassador",
     "title": "What Out for Undergrad Taught Me About Showing Up",
     "section": "Coming Back as an Ambassador",
-    "text": "Coming Back as an Ambassador\nReturning as a Campus Ambassador flipped my perspective entirely. Instead of absorbing the experience, I was responsible for helping other students get there. That meant recruiting, writing recommendations, and being someone students could talk to before the conference if they had questions or nerves.\nThe most valuable part of being an ambassador wasn’t logistical. It was being visible on campus as someone who had gone and found it worth returning to. A lot of LGBTQ+ students in STEM are already doing the mental work of figuring out where they fit — in their major, in research, in internship pipelines that weren’t built with them in mind. Having someone a year or two ahead say “this space exists and it’s worth your time” matters more than any flyer."
+    "text": "Coming Back as an Ambassador\nReturning as a Campus Ambassador flipped my perspective entirely. Instead of absorbing the experience, I was responsible for helping other students get there. That meant recruiting, writing recommendations, and being someone students could talk to before the conference if they had questions or nerves.\nThe most valuable part of being an ambassador wasn’t logistical. It was being visible on campus as someone who had gone and found it worth returning to. A lot of LGBTQ+ students in STEM are already doing the mental work of figuring out where they fit in their major, in research, in internship pipelines that weren’t built with them in mind. Having someone a year or two ahead say “this space exists and it’s worth your time” matters more than any flyer."
   },
   {
     "objectID": "posts/o4u_post/index.html#key-takeaway",
@@ -172,41 +172,41 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I grew up between Venezuela and Louisiana, which gave me an early and personal understanding of resource scarcity — including water access — that still shapes how I think about technology and its role in the world. I came to Macalester to study Computer Science, and along the way found myself drawn to the intersection of machine learning, healthcare equity, and data science."
+    "text": "I grew up between Venezuela, Colombia, and Louisiana, which gave me an early and personal understanding of resource scarcity, including water access, that still shapes how I think about technology and its role in the world. I came to Macalester to study Computer Science, and along the way found myself drawn to the intersection of machine learning, healthcare equity, and data science."
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
     "section": "",
-    "text": "I grew up between Venezuela and Louisiana, which gave me an early and personal understanding of resource scarcity — including water access — that still shapes how I think about technology and its role in the world. I came to Macalester to study Computer Science, and along the way found myself drawn to the intersection of machine learning, healthcare equity, and data science."
+    "text": "I grew up between Venezuela, Colombia, and Louisiana, which gave me an early and personal understanding of resource scarcity, including water access, that still shapes how I think about technology and its role in the world. I came to Macalester to study Computer Science, and along the way found myself drawn to the intersection of machine learning, healthcare equity, and data science."
   },
   {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
     "title": "About Me",
     "section": "Research Interests",
-    "text": "Research Interests\nMy main research interest is algorithmic bias in clinical diagnostics. A lot of medical devices and diagnostic tools were built and validated on non-representative populations, and the downstream effects on patient care are real and measurable. I’ve worked on projects around pulse oximetry bias across skin tones and skin lesion classification fairness, and I’m working toward graduate study in biostatistics to keep building in this space."
+    "text": "Research Interests\nMy main research interest is algorithmic bias in clinical diagnostics. A lot of medical devices and diagnostic tools were built and validated on non-representative populations, and the downstream effects on patient care are real and measurable. I’ve worked on projects around insulin pumps, pulse oximetry bias across skin tones, and skin lesion classification fairness, and I’m working toward graduate study in biostatistics to keep building in this space."
   },
   {
     "objectID": "about.html#on-campus",
     "href": "about.html#on-campus",
     "title": "About Me",
     "section": "On Campus",
-    "text": "On Campus\nI co-founded Macalester’s SACNAS chapter and a Nucleate Dojo chapter, co-chair Adelante, serve in Math-Statistics and CS Student Government, and work as a Campus Ambassador for Out for Undergrad (O4U) Engineering & Sciences. I care a lot about making technical spaces more accessible and representative."
+    "text": "On Campus\nI co-founded Macalester’s SACNAS chapter and a Nucleate Dojo chapter which I have lead at a co-chair level, serves in Math, Computer Science, and Statistics Student Advisory Board, and work as a Campus Ambassador for Out for Undergrad (O4U) Engineering & Sciences. I care a lot about making technical spaces more accessible and representative."
   },
   {
     "objectID": "about.html#outside-class",
     "href": "about.html#outside-class",
     "title": "About Me",
     "section": "Outside Class",
-    "text": "Outside Class\nI speak English, Spanish, and high-intermediate French. I like thinking about the history and philosophy of science, exploring questions at the edge of religion and culture, and finding good coffee shops to work in."
+    "text": "Outside Class\nI speak English, Spanish, and high-intermediate French. I like thinking about the history and philosophy of science, exploring questions at the edge of religion and culture, weighlifting, and finding good coffee shops to work in."
   }
 ]

@@ -1,3 +1,6 @@
 .DS_Store
 .Rproj.user
 .quarto/quarto-session-temp*
+
+/.quarto/
+**/*.quarto_ipynb
