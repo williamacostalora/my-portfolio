@@ -1,0 +1,41 @@
+---
+title: "William Acosta Lora"
+about:
+  id: intro-heading
+  template: trestles
+  image: images/william_headshot.png
+  image-width: 10em
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/yourusername
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/yourusername
+    - icon: envelope
+      text: Email
+      href: mailto:you@macalester.edu
+---
+
+:::{#intro-heading}
+
+Hi! I'm **William Acosta Lora**, a junior at Macalester College studying Computer Science with a minor in Data Science. I grew up in Venezuela and Louisiana, and I'm passionate about using machine learning to address bias in clinical algorithms and expand access to equitable healthcare.
+
+## Education
+
+**Macalester College** | St. Paul, MN
+B.A. in Computer Science, Data Science Minor | Sept 2023 - May 2027
+
+## Experience
+
+**Data, Innovation & Architecture Solutions Intern** | Ecolab | Summer 2026
+
+**Software Engineering Intern** | Medtronic | Previous
+
+**CS Teaching Assistant** | Macalester College | Current
+
+## Skills
+
+R · Python · SQL · tidymodels · ggplot2 · Flask · React · PyTorch · scikit-learn
+
+:::

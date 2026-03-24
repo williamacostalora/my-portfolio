@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "William Acosta Lora"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+      - href: posts.qmd
+        text: Posts
+
+  page-footer:
+    left: |
+      &copy; William Acosta Lora, 2026
+    right: |
+      Site built with <a href='https://quarto.org/'>Quarto</a>
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css

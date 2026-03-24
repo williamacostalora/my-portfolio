@@ -1,0 +1,39 @@
+---
+title: "Skin Lesion Classification with Fairness Constraints"
+description: "Built a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets."
+image: featured.jpg
+categories:
+  - Deep Learning
+  - Python
+  - Healthcare Equity
+date: 2025-04-01
+about:
+  template: solana
+  image: featured.jpg
+---
+
+## Overview
+
+Skin cancer is highly treatable when caught early, but most classification models are trained on datasets that underrepresent darker skin tones — leading to worse performance for patients who already face barriers to care. This project built a CNN-based classifier and evaluated its performance across skin tone groups.
+
+## Data
+
+We used two datasets: HAM10000, a widely used benchmark with over 10,000 dermoscopic images, and DDI (Diverse Dermatology Images), which includes a broader range of skin tones. We combined both to train and evaluate fairness across groups.
+
+## Methods
+
+- Fine-tuned a pretrained CNN (ResNet) using PyTorch
+- Evaluated performance stratified by Fitzpatrick skin tone scale
+- Compared accuracy, sensitivity, and specificity across subgroups
+
+## Results
+
+The baseline model showed meaningful performance gaps across skin tone groups. After rebalancing training data and applying targeted augmentation, we reduced disparity in sensitivity across groups.
+
+## What I Learned
+
+Dataset composition drives model fairness more than architecture choice. A model that looks good on aggregate metrics can still fail specific populations badly — which is exactly the kind of thing that gets missed without disaggregated evaluation.
+
+## Links
+
+- [GitHub Repo](https://github.com/williamacostalora/skin-lesion-classifier)

@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/o4u_post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/skin-lesion-classifier/index.html",
+      "/projects/pulse-oximeter-bias/index.html"
+    ]
+  }
+]

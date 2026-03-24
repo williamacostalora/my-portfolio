@@ -1,0 +1,42 @@
+---
+title: "Your Project Title"
+description: "One sentence describing what this project does."
+image: featured.png
+categories:
+  - R
+  - Machine Learning
+date: 2025-03-01
+about:
+  template: solana
+  image: featured.png
+---
+
+## Overview
+
+What was the goal of this project? What question were you trying to answer?
+
+## Data
+
+Where did the data come from? How big was it? What were the key variables?
+
+## Methods
+
+What did you do? Which models or tools did you use?
+
+```r
+library(tidymodels)
+
+# your code here
+```
+
+## Results
+
+What did you find? Include a plot or table if you have one.
+
+## What I Learned
+
+What surprised you? What would you do differently?
+
+## Links
+
+- [GitHub Repo](https://github.com/yourusername/your-repo)

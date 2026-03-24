@@ -1,0 +1,29 @@
+{
+  "posts/sample-post/index.qmd": {
+    "index.html": "9cdc1f69"
+  },
+  "projects/sample-project/index.qmd": {
+    "index.html": "5b2e9cd6"
+  },
+  "projects.qmd": {
+    "projects.html": "25774cff"
+  },
+  "index.qmd": {
+    "index.html": "d842e07e"
+  },
+  "about.qmd": {
+    "about.html": "7d0deb7f"
+  },
+  "posts.qmd": {
+    "posts.html": "35143e12"
+  },
+  "projects/skin-lesion-classifier/index.qmd": {
+    "index.html": "7c2e147d"
+  },
+  "projects/pulse-oximeter-bias/index.qmd": {
+    "index.html": "7c5e50c4"
+  },
+  "posts/o4u_post/index.qmd": {
+    "index.html": "09d43b5f"
+  }
+}

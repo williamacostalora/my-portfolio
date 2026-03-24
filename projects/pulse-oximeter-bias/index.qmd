@@ -1,0 +1,35 @@
+---
+title: "Pulse Oximeter Bias Detector"
+description: "Analyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025."
+image: featured.jpeg
+categories:
+  - Python
+  - Healthcare Equity
+  - Data Analysis
+date: 2025-02-01
+about:
+  template: solana
+  image: featured.jpeg
+---
+
+## Overview
+
+Pulse oximeters measure blood oxygen levels, but studies have shown they overestimate oxygen saturation in patients with darker skin tones — a flaw that went largely unnoticed for decades and contributed to delayed care during COVID-19. This project built a tool to detect and quantify that bias in clinical datasets. It placed at Macathon 2025.
+
+## Data
+
+We used publicly available clinical datasets containing paired pulse oximeter readings and arterial blood gas measurements, along with patient race/ethnicity data.
+
+## Methods
+
+- Computed hidden hypoxemia rates (true SpO2 < 88% masked by oximeter reading ≥ 92%) stratified by race
+- Visualized disparity in readings across groups
+- Flagged patient records where the gap between oximeter and true oxygen level exceeded a clinical threshold
+
+## Results
+
+We replicated findings from peer-reviewed literature showing Black patients were significantly more likely to have hidden hypoxemia — and built a reusable pipeline that can be applied to new clinical datasets.
+
+## Links
+
+- [GitHub Repo](https://github.com/williamacostalora/pulse-ox-bias)

@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWhat Out for Undergrad Taught Me About Showing Up\n\n\n\nCareer\n\nIdentity\n\nCommunity\n\n\n\nReflections on attending and returning to O4U Engineering & Sciences as a Campus Ambassador.\n\n\n\n\n\nMar 1, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nHi! I’m William Acosta Lora, a junior at Macalester College studying Computer Science with a minor in Data Science. I grew up in Venezuela and Louisiana, and I’m passionate about using machine learning to address bias in clinical algorithms and expand access to equitable healthcare.\n\n\nMacalester College | St. Paul, MN B.A. in Computer Science, Data Science Minor | Sept 2023 - May 2027\n\n\n\nData, Innovation & Architecture Solutions Intern | Ecolab | Summer 2026\nSoftware Engineering Intern | Medtronic | Previous\nCS Teaching Assistant | Macalester College | Current\n\n\n\nR · Python · SQL · tidymodels · ggplot2 · Flask · React · PyTorch · scikit-learn"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "Macalester College | St. Paul, MN B.A. in Computer Science, Data Science Minor | Sept 2023 - May 2027"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "Data, Innovation & Architecture Solutions Intern | Ecolab | Summer 2026\nSoftware Engineering Intern | Medtronic | Previous\nCS Teaching Assistant | Macalester College | Current"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "R · Python · SQL · tidymodels · ggplot2 · Flask · React · PyTorch · scikit-learn"
+  },
+  {
+    "objectID": "projects/pulse-oximeter-bias/index.html",
+    "href": "projects/pulse-oximeter-bias/index.html",
+    "title": "Pulse Oximeter Bias Detector",
+    "section": "",
+    "text": "Pulse oximeters measure blood oxygen levels, but studies have shown they overestimate oxygen saturation in patients with darker skin tones — a flaw that went largely unnoticed for decades and contributed to delayed care during COVID-19. This project built a tool to detect and quantify that bias in clinical datasets. It placed at Macathon 2025."
+  },
+  {
+    "objectID": "projects/pulse-oximeter-bias/index.html#overview",
+    "href": "projects/pulse-oximeter-bias/index.html#overview",
+    "title": "Pulse Oximeter Bias Detector",
+    "section": "",
+    "text": "Pulse oximeters measure blood oxygen levels, but studies have shown they overestimate oxygen saturation in patients with darker skin tones — a flaw that went largely unnoticed for decades and contributed to delayed care during COVID-19. This project built a tool to detect and quantify that bias in clinical datasets. It placed at Macathon 2025."
+  },
+  {
+    "objectID": "projects/pulse-oximeter-bias/index.html#data",
+    "href": "projects/pulse-oximeter-bias/index.html#data",
+    "title": "Pulse Oximeter Bias Detector",
+    "section": "Data",
+    "text": "Data\nWe used publicly available clinical datasets containing paired pulse oximeter readings and arterial blood gas measurements, along with patient race/ethnicity data."
+  },
+  {
+    "objectID": "projects/pulse-oximeter-bias/index.html#methods",
+    "href": "projects/pulse-oximeter-bias/index.html#methods",
+    "title": "Pulse Oximeter Bias Detector",
+    "section": "Methods",
+    "text": "Methods\n\nComputed hidden hypoxemia rates (true SpO2 &lt; 88% masked by oximeter reading ≥ 92%) stratified by race\nVisualized disparity in readings across groups\nFlagged patient records where the gap between oximeter and true oxygen level exceeded a clinical threshold"
+  },
+  {
+    "objectID": "projects/pulse-oximeter-bias/index.html#results",
+    "href": "projects/pulse-oximeter-bias/index.html#results",
+    "title": "Pulse Oximeter Bias Detector",
+    "section": "Results",
+    "text": "Results\nWe replicated findings from peer-reviewed literature showing Black patients were significantly more likely to have hidden hypoxemia — and built a reusable pipeline that can be applied to new clinical datasets."
+  },
+  {
+    "objectID": "projects/pulse-oximeter-bias/index.html#links",
+    "href": "projects/pulse-oximeter-bias/index.html#links",
+    "title": "Pulse Oximeter Bias Detector",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repo"
+  },
+  {
+    "objectID": "posts/o4u_post/index.html",
+    "href": "posts/o4u_post/index.html",
+    "title": "What Out for Undergrad Taught Me About Showing Up",
+    "section": "",
+    "text": "Out for Undergrad (O4U) is a national nonprofit that runs intensive career conferences for high-achieving LGBTQ+ undergraduates in engineering, science, business, and other fields. I attended the Engineering & Sciences conference as a student, and then came back as a Campus Ambassador. This post is about what changed between those two experiences — and what I think LGBTQ+ students in technical fields actually need to hear."
+  },
+  {
+    "objectID": "posts/o4u_post/index.html#introduction",
+    "href": "posts/o4u_post/index.html#introduction",
+    "title": "What Out for Undergrad Taught Me About Showing Up",
+    "section": "",
+    "text": "Out for Undergrad (O4U) is a national nonprofit that runs intensive career conferences for high-achieving LGBTQ+ undergraduates in engineering, science, business, and other fields. I attended the Engineering & Sciences conference as a student, and then came back as a Campus Ambassador. This post is about what changed between those two experiences — and what I think LGBTQ+ students in technical fields actually need to hear."
+  },
+  {
+    "objectID": "posts/o4u_post/index.html#the-first-time",
+    "href": "posts/o4u_post/index.html#the-first-time",
+    "title": "What Out for Undergrad Taught Me About Showing Up",
+    "section": "The First Time",
+    "text": "The First Time\nI showed up to O4U not totally sure what to expect. I knew it was a career conference, so I had my resume ready and my elevator pitch rehearsed. What I didn’t expect was how much of the weekend would be about identity — not as a separate topic from career, but as completely tangled up in it.\nThe panels with professionals were the part that stayed with me longest. Hearing people talk openly about navigating LGBTQ+ identity in technical workplaces, about when and whether to come out, about finding community inside large companies — that’s not a conversation that happens in most career centers. It was the first time I felt like my whole self was relevant in a professional development space, not just my skills."
+  },
+  {
+    "objectID": "posts/o4u_post/index.html#coming-back-as-an-ambassador",
+    "href": "posts/o4u_post/index.html#coming-back-as-an-ambassador",
+    "title": "What Out for Undergrad Taught Me About Showing Up",
+    "section": "Coming Back as an Ambassador",
+    "text": "Coming Back as an Ambassador\nReturning as a Campus Ambassador flipped my perspective entirely. Instead of absorbing the experience, I was responsible for helping other students get there. That meant recruiting, writing recommendations, and being someone students could talk to before the conference if they had questions or nerves.\nThe most valuable part of being an ambassador wasn’t logistical. It was being visible on campus as someone who had gone and found it worth returning to. A lot of LGBTQ+ students in STEM are already doing the mental work of figuring out where they fit — in their major, in research, in internship pipelines that weren’t built with them in mind. Having someone a year or two ahead say “this space exists and it’s worth your time” matters more than any flyer."
+  },
+  {
+    "objectID": "posts/o4u_post/index.html#key-takeaway",
+    "href": "posts/o4u_post/index.html#key-takeaway",
+    "title": "What Out for Undergrad Taught Me About Showing Up",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe best career development I’ve gotten hasn’t come from perfecting my resume. It’s come from being in rooms where people like me were already doing the work I want to do — and being willing to go back and hold the door open. If you’re an LGBTQ+ student in engineering or science and you haven’t looked into O4U, look it up."
+  },
+  {
+    "objectID": "posts/o4u_post/index.html#resources",
+    "href": "posts/o4u_post/index.html#resources",
+    "title": "What Out for Undergrad Taught Me About Showing Up",
+    "section": "Resources",
+    "text": "Resources\n\nOut for Undergrad\nO4U Engineering & Sciences Conference"
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html",
+    "href": "projects/skin-lesion-classifier/index.html",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "",
+    "text": "Skin cancer is highly treatable when caught early, but most classification models are trained on datasets that underrepresent darker skin tones — leading to worse performance for patients who already face barriers to care. This project built a CNN-based classifier and evaluated its performance across skin tone groups."
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html#overview",
+    "href": "projects/skin-lesion-classifier/index.html#overview",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "",
+    "text": "Skin cancer is highly treatable when caught early, but most classification models are trained on datasets that underrepresent darker skin tones — leading to worse performance for patients who already face barriers to care. This project built a CNN-based classifier and evaluated its performance across skin tone groups."
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html#data",
+    "href": "projects/skin-lesion-classifier/index.html#data",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "Data",
+    "text": "Data\nWe used two datasets: HAM10000, a widely used benchmark with over 10,000 dermoscopic images, and DDI (Diverse Dermatology Images), which includes a broader range of skin tones. We combined both to train and evaluate fairness across groups."
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html#methods",
+    "href": "projects/skin-lesion-classifier/index.html#methods",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "Methods",
+    "text": "Methods\n\nFine-tuned a pretrained CNN (ResNet) using PyTorch\nEvaluated performance stratified by Fitzpatrick skin tone scale\nCompared accuracy, sensitivity, and specificity across subgroups"
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html#results",
+    "href": "projects/skin-lesion-classifier/index.html#results",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "Results",
+    "text": "Results\nThe baseline model showed meaningful performance gaps across skin tone groups. After rebalancing training data and applying targeted augmentation, we reduced disparity in sensitivity across groups."
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html#what-i-learned",
+    "href": "projects/skin-lesion-classifier/index.html#what-i-learned",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "What I Learned",
+    "text": "What I Learned\nDataset composition drives model fairness more than architecture choice. A model that looks good on aggregate metrics can still fail specific populations badly — which is exactly the kind of thing that gets missed without disaggregated evaluation."
+  },
+  {
+    "objectID": "projects/skin-lesion-classifier/index.html#links",
+    "href": "projects/skin-lesion-classifier/index.html#links",
+    "title": "Skin Lesion Classification with Fairness Constraints",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repo"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I grew up between Venezuela and Louisiana, which gave me an early and personal understanding of resource scarcity — including water access — that still shapes how I think about technology and its role in the world. I came to Macalester to study Computer Science, and along the way found myself drawn to the intersection of machine learning, healthcare equity, and data science."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I grew up between Venezuela and Louisiana, which gave me an early and personal understanding of resource scarcity — including water access — that still shapes how I think about technology and its role in the world. I came to Macalester to study Computer Science, and along the way found myself drawn to the intersection of machine learning, healthcare equity, and data science."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About Me",
+    "section": "Research Interests",
+    "text": "Research Interests\nMy main research interest is algorithmic bias in clinical diagnostics. A lot of medical devices and diagnostic tools were built and validated on non-representative populations, and the downstream effects on patient care are real and measurable. I’ve worked on projects around pulse oximetry bias across skin tones and skin lesion classification fairness, and I’m working toward graduate study in biostatistics to keep building in this space."
+  },
+  {
+    "objectID": "about.html#on-campus",
+    "href": "about.html#on-campus",
+    "title": "About Me",
+    "section": "On Campus",
+    "text": "On Campus\nI co-founded Macalester’s SACNAS chapter and a Nucleate Dojo chapter, co-chair Adelante, serve in Math-Statistics and CS Student Government, and work as a Campus Ambassador for Out for Undergrad (O4U) Engineering & Sciences. I care a lot about making technical spaces more accessible and representative."
+  },
+  {
+    "objectID": "about.html#outside-class",
+    "href": "about.html#outside-class",
+    "title": "About Me",
+    "section": "Outside Class",
+    "text": "Outside Class\nI speak English, Spanish, and high-intermediate French. I like thinking about the history and philosophy of science, exploring questions at the edge of religion and culture, and finding good coffee shops to work in."
+  }
+]
