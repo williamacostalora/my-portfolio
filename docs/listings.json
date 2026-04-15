@@ -8,6 +8,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/healthcare_access_risk_screening_system/index.html",
       "/projects/skin-lesion-classifier/index.html",
       "/projects/pulse-oximeter-bias/index.html"
     ]
