@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-15">
+<meta name="description" content="Deployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest.">
 
-<title>index – William Acosta Lora</title>
+<title>Healthcare Access Risk Screening System – William Acosta Lora</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,7 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -121,40 +122,152 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-solana column-body">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">index</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<h1 class="title">Healthcare Access Risk Screening System</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">Data Engineering</div>
+    <div class="quarto-category">Healthcare Systems</div>
   </div>
-  
+  </div>
+<div>
+  <div class="description">
+    Deployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest.
+  </div>
+</div>
+<div class="quarto-title-meta">
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 15, 2026</p>
+    </div>
+  </div>
+  </div>
+</header> 
+      <div class="about-contents"><main class="content" id="quarto-document-content">
+<section id="overview" class="level2">
+<h2 data-anchor-id="overview">Overview</h2>
+<p>Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.</p>
+<p>The project placed 1st at ASA DataFest.</p>
+</section>
+<section id="system-architecture" class="level2">
+<h2 data-anchor-id="system-architecture">System Architecture</h2>
+<ul>
+<li><strong>Data Layer:</strong> Integrated multiple large-scale EHR datasets (demographics, diagnoses, SDOH, utilization) with ZIP code–level geospatial data</li>
+<li><strong>Feature Engineering Pipeline:</strong>
+<ul>
+<li>Distance to nearest providers by specialty</li>
+<li>Transportation access proxies (vehicle access, rural/urban classification)</li>
+<li>Care patterns (ER utilization, follow-up engagement)</li>
+</ul></li>
+<li><strong>Model Layer:</strong> Interpretable decision tree classifier built with <code>tidymodels</code></li>
+<li><strong>Serving Layer:</strong> Real-time inference via <code>R/Shiny</code> with sub-second latency for interactive use</li>
+</ul>
+</section>
+<section id="machine-learning" class="level2">
+<h2 data-anchor-id="machine-learning">Machine Learning</h2>
+<ul>
+<li>Trained decision tree models on &gt;1,000 patient records</li>
+<li>Evaluated on held-out (unseen) test set:
+<ul>
+<li><strong>Accuracy:</strong> 82%</li>
+<li><strong>AUC:</strong> ~0.85</li>
+</ul></li>
+<li>Validation strategy:
+<ul>
+<li>Stratified train/test split to preserve class balance</li>
+<li>k-fold cross-validation (k=5) for model selection and tuning</li>
+</ul></li>
+<li>Optimized for <strong>interpretability + clinical usability</strong> over black-box performance</li>
+</ul>
+</section>
+<section id="production-design" class="level2">
+<h2 data-anchor-id="production-design">Production Design</h2>
+<ul>
+<li><strong>Low-latency inference:</strong> Preloaded model objects for real-time predictions (&lt;100ms per request)</li>
+<li><strong>Modular pipeline:</strong>
+<ul>
+<li>Data preprocessing → feature engineering → model inference → UI rendering</li>
+</ul></li>
+<li><strong>Reproducibility:</strong> Encapsulated data transformations and modeling steps using <code>tidymodels</code> workflows</li>
+<li><strong>Scalability considerations:</strong>
+<ul>
+<li>Designed to generalize to new hospital systems with minimal feature remapping</li>
+<li>Pipeline supports retraining on updated EHR datasets</li>
+</ul></li>
+</ul>
+</section>
+<section id="product-features" class="level2">
+<h2 data-anchor-id="product-features">Product Features</h2>
+<section id="real-time-risk-screener" class="level3">
+<h3 data-anchor-id="real-time-risk-screener">Real-Time Risk Screener</h3>
+<ul>
+<li>Inputs: race, age, ZIP code, ER usage, patient engagement signals</li>
+<li>Outputs:
+<ul>
+<li>Risk classification (Low / Moderate / High)</li>
+<li>Probability score</li>
+<li>Population-level comparison</li>
+</ul></li>
+<li>Generates actionable recommendations for providers</li>
+</ul>
+</section>
+<section id="geospatial-intelligence-layer" class="level3">
+<h3 data-anchor-id="geospatial-intelligence-layer">Geospatial Intelligence Layer</h3>
+<ul>
+<li>Interactive maps displaying:
+<ul>
+<li>Patient distribution</li>
+<li>Provider density by specialty</li>
+<li>Transportation-insecure regions</li>
+</ul></li>
+<li>Enables identification of healthcare deserts and access gaps</li>
+</ul>
+</section>
+<section id="model-interpretability" class="level3">
+<h3 data-anchor-id="model-interpretability">Model Interpretability</h3>
+<ul>
+<li>Visualized full decision tree used in predictions</li>
+<li>Highlighted key splits (e.g., ZIP-level risk, SDOH indicators)</li>
+<li>Designed for transparency in high-stakes decision environments</li>
+</ul>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 data-anchor-id="results">Results</h2>
+<ul>
+<li>Achieved 82% accuracy on unseen patient data</li>
+<li>Identified transportation access as a dominant predictor of missed/delayed care</li>
+<li>Demonstrated strong signal from ZIP-level socioeconomic features</li>
+<li>Delivered a fully deployed, clinician-facing tool under time constraints</li>
+</ul>
+</section>
+<section id="impact" class="level2">
+<h2 data-anchor-id="impact">Impact</h2>
+<p>This project demonstrates how ML systems can be operationalized in healthcare settings to surface disparities and guide interventions. The system provides a scalable framework for identifying high-risk patients and integrating data-driven insights into clinical workflows.</p>
+</section>
+<section id="links" class="level2">
+<h2 data-anchor-id="links">Links</h2>
+<ul>
+<li><a href="https://1wrn0x-liam-acosta0lora.shinyapps.io/ScreeningForHighNeedPatients/">Live Application</a></li>
+</ul>
 
 
-</header>
-
-
-
-
-
-</main> <!-- /main -->
+</section>
+</main></div>
+    </div>
+    <img src="featured.jpeg" class="about-image
+  rounded " style="width: 15em;">
+  </div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

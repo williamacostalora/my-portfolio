@@ -172,7 +172,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nindex\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Access Risk Screening System\n\n\n\nR\n\nMachine Learning\n\nData Engineering\n\nHealthcare Systems\n\n\n\nDeployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest.\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -208,5 +208,68 @@
     "title": "About Me",
     "section": "Outside Class",
     "text": "Outside Class\nI speak English, Spanish, and high-intermediate French. I like thinking about the history and philosophy of science, exploring questions at the edge of religion and culture, weighlifting, and finding good coffee shops to work in."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html",
+    "href": "projects/healthcare_access_risk_screening_system/index.html",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "",
+    "text": "Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.\nThe project placed 1st at ASA DataFest."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#overview",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#overview",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "",
+    "text": "Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.\nThe project placed 1st at ASA DataFest."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#system-architecture",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#system-architecture",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "System Architecture",
+    "text": "System Architecture\n\nData Layer: Integrated multiple large-scale EHR datasets (demographics, diagnoses, SDOH, utilization) with ZIP code–level geospatial data\nFeature Engineering Pipeline:\n\nDistance to nearest providers by specialty\nTransportation access proxies (vehicle access, rural/urban classification)\nCare patterns (ER utilization, follow-up engagement)\n\nModel Layer: Interpretable decision tree classifier built with tidymodels\nServing Layer: Real-time inference via R/Shiny with sub-second latency for interactive use"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#machine-learning",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#machine-learning",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Machine Learning",
+    "text": "Machine Learning\n\nTrained decision tree models on &gt;1,000 patient records\nEvaluated on held-out (unseen) test set:\n\nAccuracy: 82%\nAUC: ~0.85\n\nValidation strategy:\n\nStratified train/test split to preserve class balance\nk-fold cross-validation (k=5) for model selection and tuning\n\nOptimized for interpretability + clinical usability over black-box performance"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#production-design",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#production-design",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Production Design",
+    "text": "Production Design\n\nLow-latency inference: Preloaded model objects for real-time predictions (&lt;100ms per request)\nModular pipeline:\n\nData preprocessing → feature engineering → model inference → UI rendering\n\nReproducibility: Encapsulated data transformations and modeling steps using tidymodels workflows\nScalability considerations:\n\nDesigned to generalize to new hospital systems with minimal feature remapping\nPipeline supports retraining on updated EHR datasets"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#product-features",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#product-features",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Product Features",
+    "text": "Product Features\n\nReal-Time Risk Screener\n\nInputs: race, age, ZIP code, ER usage, patient engagement signals\nOutputs:\n\nRisk classification (Low / Moderate / High)\nProbability score\nPopulation-level comparison\n\nGenerates actionable recommendations for providers\n\n\n\nGeospatial Intelligence Layer\n\nInteractive maps displaying:\n\nPatient distribution\nProvider density by specialty\nTransportation-insecure regions\n\nEnables identification of healthcare deserts and access gaps\n\n\n\nModel Interpretability\n\nVisualized full decision tree used in predictions\nHighlighted key splits (e.g., ZIP-level risk, SDOH indicators)\nDesigned for transparency in high-stakes decision environments"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#results",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#results",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Results",
+    "text": "Results\n\nAchieved 82% accuracy on unseen patient data\nIdentified transportation access as a dominant predictor of missed/delayed care\nDemonstrated strong signal from ZIP-level socioeconomic features\nDelivered a fully deployed, clinician-facing tool under time constraints"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#impact",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#impact",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Impact",
+    "text": "Impact\nThis project demonstrates how ML systems can be operationalized in healthcare settings to surface disparities and guide interventions. The system provides a scalable framework for identifying high-risk patients and integrating data-driven insights into clinical workflows."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#links",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#links",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Links",
+    "text": "Links\n\nLive Application"
   }
 ]

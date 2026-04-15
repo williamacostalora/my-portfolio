@@ -1,5 +1,93 @@
 ---
-title: "index"
-format: html
+title: "Healthcare Access Risk Screening System"
+
+description: "Deployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest."
+
+image: featured.jpeg
+
+categories:
+  - R
+  - Machine Learning
+  - Data Engineering
+  - Healthcare Systems
+
+date: 2026-04-15
+
+about:
+  template: solana
+  image: featured.jpeg
 ---
 
+## Overview
+
+Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.
+
+The project placed 1st at ASA DataFest.
+
+## System Architecture
+
+- **Data Layer:** Integrated multiple large-scale EHR datasets (demographics, diagnoses, SDOH, utilization) with ZIP code–level geospatial data
+- **Feature Engineering Pipeline:**
+  - Distance to nearest providers by specialty
+  - Transportation access proxies (vehicle access, rural/urban classification)
+  - Care patterns (ER utilization, follow-up engagement)
+- **Model Layer:** Interpretable decision tree classifier built with `tidymodels`
+- **Serving Layer:** Real-time inference via `R/Shiny` with sub-second latency for interactive use
+
+## Machine Learning
+
+- Trained decision tree models on >1,000 patient records
+- Evaluated on held-out (unseen) test set:
+  - **Accuracy:** 82%
+  - **AUC:** ~0.85
+- Validation strategy:
+  - Stratified train/test split to preserve class balance
+  - k-fold cross-validation (k=5) for model selection and tuning
+- Optimized for **interpretability + clinical usability** over black-box performance
+
+## Production Design
+
+- **Low-latency inference:** Preloaded model objects for real-time predictions (<100ms per request)
+- **Modular pipeline:**
+  - Data preprocessing → feature engineering → model inference → UI rendering
+- **Reproducibility:** Encapsulated data transformations and modeling steps using `tidymodels` workflows
+- **Scalability considerations:**
+  - Designed to generalize to new hospital systems with minimal feature remapping
+  - Pipeline supports retraining on updated EHR datasets
+
+## Product Features
+
+### Real-Time Risk Screener
+- Inputs: race, age, ZIP code, ER usage, patient engagement signals
+- Outputs:
+  - Risk classification (Low / Moderate / High)
+  - Probability score
+  - Population-level comparison
+- Generates actionable recommendations for providers
+
+### Geospatial Intelligence Layer
+- Interactive maps displaying:
+  - Patient distribution
+  - Provider density by specialty
+  - Transportation-insecure regions
+- Enables identification of healthcare deserts and access gaps
+
+### Model Interpretability
+- Visualized full decision tree used in predictions
+- Highlighted key splits (e.g., ZIP-level risk, SDOH indicators)
+- Designed for transparency in high-stakes decision environments
+
+## Results
+
+- Achieved 82% accuracy on unseen patient data
+- Identified transportation access as a dominant predictor of missed/delayed care
+- Demonstrated strong signal from ZIP-level socioeconomic features
+- Delivered a fully deployed, clinician-facing tool under time constraints
+
+## Impact
+
+This project demonstrates how ML systems can be operationalized in healthcare settings to surface disparities and guide interventions. The system provides a scalable framework for identifying high-risk patients and integrating data-driven insights into clinical workflows.
+
+## Links
+
+- [Live Application](https://1wrn0x-liam-acosta0lora.shinyapps.io/ScreeningForHighNeedPatients/)
