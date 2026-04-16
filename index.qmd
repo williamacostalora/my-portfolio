@@ -34,8 +34,20 @@ B.A. in Computer Science, Data Science Minor | Sept 2023 - May 2027
 
 **CS Teaching Assistant** | Macalester College | Current
 
-## Skills
+## Technical Skills
 
-R · Python · SQL · tidymodels · ggplot2 · Flask · React · PyTorch · scikit-learn
+**Languages**: Python · Java · R · SQL · JavaScript · C
+
+**ML/Data**: PyTorch · scikit-learn · tidymodels · Pandas · NumPy · Tensorflow
+
+**Visualization**: ggplot2 · Matplotlib · Plotly
+
+**Web**: Flask · React · HTML/CSS
+
+**Tools**: Git · Jupyter · Quarto · Google Colab
+
+## Research Focus
+
+Algorithmic bias in clinical diagnostics, healthcare equity, and machine learning fairness.
 
 :::

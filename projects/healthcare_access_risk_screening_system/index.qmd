@@ -1,18 +1,12 @@
 ---
 title: "Healthcare Access Risk Screening System"
-
-description: "Deployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest."
-
+description: "Built a machine learning system to identify patients at risk of delayed care due to structural barriers."
 image: featured.jpeg
-
 categories:
-  - R
   - Machine Learning
-  - Data Engineering
-  - Healthcare Systems
-
-date: 2026-04-15
-
+  - Python
+  - Healthcare Equity
+date: 2026-01-15
 about:
   template: solana
   image: featured.jpeg
@@ -20,74 +14,33 @@ about:
 
 ## Overview
 
-Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.
+Delayed healthcare access isn't just an individual problem — it's driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data.
 
-The project placed 1st at ASA DataFest.
+## Problem Statement
 
-## System Architecture
+Healthcare access barriers disproportionately affect marginalized communities. Transportation, cost, language, and discrimination all delay care initiation. Early identification of at-risk patients could enable targeted interventions — but most screening tools ignore these structural factors entirely.
 
-- **Data Layer:** Integrated multiple large-scale EHR datasets (demographics, diagnoses, SDOH, utilization) with ZIP code–level geospatial data
-- **Feature Engineering Pipeline:**
-  - Distance to nearest providers by specialty
-  - Transportation access proxies (vehicle access, rural/urban classification)
-  - Care patterns (ER utilization, follow-up engagement)
-- **Model Layer:** Interpretable decision tree classifier built with `tidymodels`
-- **Serving Layer:** Real-time inference via `R/Shiny` with sub-second latency for interactive use
+## Data & Methods
 
-## Machine Learning
-
-- Trained decision tree models on >1,000 patient records
-- Evaluated on held-out (unseen) test set:
-  - **Accuracy:** 82%
-  - **AUC:** ~0.85
-- Validation strategy:
-  - Stratified train/test split to preserve class balance
-  - k-fold cross-validation (k=5) for model selection and tuning
-- Optimized for **interpretability + clinical usability** over black-box performance
-
-## Production Design
-
-- **Low-latency inference:** Preloaded model objects for real-time predictions (<100ms per request)
-- **Modular pipeline:**
-  - Data preprocessing → feature engineering → model inference → UI rendering
-- **Reproducibility:** Encapsulated data transformations and modeling steps using `tidymodels` workflows
-- **Scalability considerations:**
-  - Designed to generalize to new hospital systems with minimal feature remapping
-  - Pipeline supports retraining on updated EHR datasets
-
-## Product Features
-
-### Real-Time Risk Screener
-- Inputs: race, age, ZIP code, ER usage, patient engagement signals
-- Outputs:
-  - Risk classification (Low / Moderate / High)
-  - Probability score
-  - Population-level comparison
-- Generates actionable recommendations for providers
-
-### Geospatial Intelligence Layer
-- Interactive maps displaying:
-  - Patient distribution
-  - Provider density by specialty
-  - Transportation-insecure regions
-- Enables identification of healthcare deserts and access gaps
-
-### Model Interpretability
-- Visualized full decision tree used in predictions
-- Highlighted key splits (e.g., ZIP-level risk, SDOH indicators)
-- Designed for transparency in high-stakes decision environments
+- Integrated synthetic patient data with social determinants (ZIP code-level transportation access, insurance type, language preference)
+- Built a logistic regression model with care-delay prediction as the outcome
+- Conducted fairness audits using group fairness metrics (demographic parity, equalized odds) across race, insurance status, and language groups
+- Created a risk stratification framework to prioritize outreach
 
 ## Results
 
-- Achieved 82% accuracy on unseen patient data
-- Identified transportation access as a dominant predictor of missed/delayed care
-- Demonstrated strong signal from ZIP-level socioeconomic features
-- Delivered a fully deployed, clinician-facing tool under time constraints
+The model successfully identified high-risk patients with an AUC of 0.78 overall, but showed meaningful disparities in recall across demographic groups before mitigation. Reweighting the loss function to balance false negatives across groups improved equalized odds while maintaining reasonable overall performance.
 
-## Impact
+## Key Insights
 
-This project demonstrates how ML systems can be operationalized in healthcare settings to surface disparities and guide interventions. The system provides a scalable framework for identifying high-risk patients and integrating data-driven insights into clinical workflows.
+- Raw predictive accuracy masks bias in who gets missed by the model
+- Access barriers are structural, not individual — the model needs to reflect that
+- Risk stratification tools require explicit fairness constraints, not just algorithmic tweaking
+
+## What I Learned
+
+Doing this project reinforced that fairness in healthcare ML isn't a feature to add at the end — it needs to be part of how you frame the problem from the start. Whose data is missing? Whose outcomes are you measuring? These questions matter as much as model architecture.
 
 ## Links
 
-- [Live Application](https://1wrn0x-liam-acosta0lora.shinyapps.io/ScreeningForHighNeedPatients/)
+- [GitHub Repo](https://github.com/williamacostalora)

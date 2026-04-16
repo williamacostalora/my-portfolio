@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-15">
-<meta name="description" content="Deployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest.">
+<meta name="dcterms.date" content="2026-01-15">
+<meta name="description" content="Built a machine learning system to identify patients at risk of delayed care due to structural barriers.">
 
-<title>Healthcare Access Risk Screening System – William Acosta Lora</title>
+<title>Healthcare Access Risk Screening System – William Acosta Lora | Computer Science &amp; Healthcare Equity</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a72fdc9c9ff910b065cfbea9b8f3b023.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-6a404875cefd823f8e9de44f4f2e547a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a72fdc9c9ff910b065cfbea9b8f3b023.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,12 +73,183 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Healthcare Access Risk Screening System – William Acosta Lora | Computer Science &amp; Healthcare Equity">
+<meta property="og:description" content="Built a machine learning system to identify patients at risk of delayed care due to structural barriers.">
+<meta property="og:image" content="https://williamacostalora.com/projects/healthcare_access_risk_screening_system/featured.jpeg">
+<meta property="og:site_name" content="William Acosta Lora | Computer Science &amp; Healthcare Equity">
+<meta name="twitter:title" content="Healthcare Access Risk Screening System – William Acosta Lora | Computer Science &amp; Healthcare Equity">
+<meta name="twitter:description" content="Built a machine learning system to identify patients at risk of delayed care due to structural barriers.">
+<meta name="twitter:image" content="https://williamacostalora.com/projects/healthcare_access_risk_screening_system/featured.jpeg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -82,6 +257,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/william_headshot.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/william_headshot.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">William Acosta Lora</span>
@@ -107,11 +284,29 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Posts</span></a>
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/williamacostalora"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/william-acosta-lora-2a288829a/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:waacosta13@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -120,7 +315,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#data-methods" id="toc-data-methods" class="nav-link" data-scroll-target="#data-methods">Data &amp; Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
+  <li><a href="#what-i-learned" id="toc-what-i-learned" class="nav-link" data-scroll-target="#what-i-learned">What I Learned</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <div class="quarto-about-solana column-body">
   <div class="about-entity">
@@ -129,132 +337,65 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">Healthcare Access Risk Screening System</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">R</div>
     <div class="quarto-category">Machine Learning</div>
-    <div class="quarto-category">Data Engineering</div>
-    <div class="quarto-category">Healthcare Systems</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Healthcare Equity</div>
   </div>
   </div>
 <div>
   <div class="description">
-    Deployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest.
+    Built a machine learning system to identify patients at risk of delayed care due to structural barriers.
   </div>
 </div>
 <div class="quarto-title-meta">
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 15, 2026</p>
+      <p class="date">January 15, 2026</p>
     </div>
   </div>
   </div>
 </header> 
       <div class="about-contents"><main class="content" id="quarto-document-content">
+
+
 <section id="overview" class="level2">
 <h2 data-anchor-id="overview">Overview</h2>
-<p>Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.</p>
-<p>The project placed 1st at ASA DataFest.</p>
+<p>Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data.</p>
 </section>
-<section id="system-architecture" class="level2">
-<h2 data-anchor-id="system-architecture">System Architecture</h2>
+<section id="problem-statement" class="level2">
+<h2 data-anchor-id="problem-statement">Problem Statement</h2>
+<p>Healthcare access barriers disproportionately affect marginalized communities. Transportation, cost, language, and discrimination all delay care initiation. Early identification of at-risk patients could enable targeted interventions — but most screening tools ignore these structural factors entirely.</p>
+</section>
+<section id="data-methods" class="level2">
+<h2 data-anchor-id="data-methods">Data &amp; Methods</h2>
 <ul>
-<li><strong>Data Layer:</strong> Integrated multiple large-scale EHR datasets (demographics, diagnoses, SDOH, utilization) with ZIP code–level geospatial data</li>
-<li><strong>Feature Engineering Pipeline:</strong>
-<ul>
-<li>Distance to nearest providers by specialty</li>
-<li>Transportation access proxies (vehicle access, rural/urban classification)</li>
-<li>Care patterns (ER utilization, follow-up engagement)</li>
-</ul></li>
-<li><strong>Model Layer:</strong> Interpretable decision tree classifier built with <code>tidymodels</code></li>
-<li><strong>Serving Layer:</strong> Real-time inference via <code>R/Shiny</code> with sub-second latency for interactive use</li>
+<li>Integrated synthetic patient data with social determinants (ZIP code-level transportation access, insurance type, language preference)</li>
+<li>Built a logistic regression model with care-delay prediction as the outcome</li>
+<li>Conducted fairness audits using group fairness metrics (demographic parity, equalized odds) across race, insurance status, and language groups</li>
+<li>Created a risk stratification framework to prioritize outreach</li>
 </ul>
-</section>
-<section id="machine-learning" class="level2">
-<h2 data-anchor-id="machine-learning">Machine Learning</h2>
-<ul>
-<li>Trained decision tree models on &gt;1,000 patient records</li>
-<li>Evaluated on held-out (unseen) test set:
-<ul>
-<li><strong>Accuracy:</strong> 82%</li>
-<li><strong>AUC:</strong> ~0.85</li>
-</ul></li>
-<li>Validation strategy:
-<ul>
-<li>Stratified train/test split to preserve class balance</li>
-<li>k-fold cross-validation (k=5) for model selection and tuning</li>
-</ul></li>
-<li>Optimized for <strong>interpretability + clinical usability</strong> over black-box performance</li>
-</ul>
-</section>
-<section id="production-design" class="level2">
-<h2 data-anchor-id="production-design">Production Design</h2>
-<ul>
-<li><strong>Low-latency inference:</strong> Preloaded model objects for real-time predictions (&lt;100ms per request)</li>
-<li><strong>Modular pipeline:</strong>
-<ul>
-<li>Data preprocessing → feature engineering → model inference → UI rendering</li>
-</ul></li>
-<li><strong>Reproducibility:</strong> Encapsulated data transformations and modeling steps using <code>tidymodels</code> workflows</li>
-<li><strong>Scalability considerations:</strong>
-<ul>
-<li>Designed to generalize to new hospital systems with minimal feature remapping</li>
-<li>Pipeline supports retraining on updated EHR datasets</li>
-</ul></li>
-</ul>
-</section>
-<section id="product-features" class="level2">
-<h2 data-anchor-id="product-features">Product Features</h2>
-<section id="real-time-risk-screener" class="level3">
-<h3 data-anchor-id="real-time-risk-screener">Real-Time Risk Screener</h3>
-<ul>
-<li>Inputs: race, age, ZIP code, ER usage, patient engagement signals</li>
-<li>Outputs:
-<ul>
-<li>Risk classification (Low / Moderate / High)</li>
-<li>Probability score</li>
-<li>Population-level comparison</li>
-</ul></li>
-<li>Generates actionable recommendations for providers</li>
-</ul>
-</section>
-<section id="geospatial-intelligence-layer" class="level3">
-<h3 data-anchor-id="geospatial-intelligence-layer">Geospatial Intelligence Layer</h3>
-<ul>
-<li>Interactive maps displaying:
-<ul>
-<li>Patient distribution</li>
-<li>Provider density by specialty</li>
-<li>Transportation-insecure regions</li>
-</ul></li>
-<li>Enables identification of healthcare deserts and access gaps</li>
-</ul>
-</section>
-<section id="model-interpretability" class="level3">
-<h3 data-anchor-id="model-interpretability">Model Interpretability</h3>
-<ul>
-<li>Visualized full decision tree used in predictions</li>
-<li>Highlighted key splits (e.g., ZIP-level risk, SDOH indicators)</li>
-<li>Designed for transparency in high-stakes decision environments</li>
-</ul>
-</section>
 </section>
 <section id="results" class="level2">
 <h2 data-anchor-id="results">Results</h2>
+<p>The model successfully identified high-risk patients with an AUC of 0.78 overall, but showed meaningful disparities in recall across demographic groups before mitigation. Reweighting the loss function to balance false negatives across groups improved equalized odds while maintaining reasonable overall performance.</p>
+</section>
+<section id="key-insights" class="level2">
+<h2 data-anchor-id="key-insights">Key Insights</h2>
 <ul>
-<li>Achieved 82% accuracy on unseen patient data</li>
-<li>Identified transportation access as a dominant predictor of missed/delayed care</li>
-<li>Demonstrated strong signal from ZIP-level socioeconomic features</li>
-<li>Delivered a fully deployed, clinician-facing tool under time constraints</li>
+<li>Raw predictive accuracy masks bias in who gets missed by the model</li>
+<li>Access barriers are structural, not individual — the model needs to reflect that</li>
+<li>Risk stratification tools require explicit fairness constraints, not just algorithmic tweaking</li>
 </ul>
 </section>
-<section id="impact" class="level2">
-<h2 data-anchor-id="impact">Impact</h2>
-<p>This project demonstrates how ML systems can be operationalized in healthcare settings to surface disparities and guide interventions. The system provides a scalable framework for identifying high-risk patients and integrating data-driven insights into clinical workflows.</p>
+<section id="what-i-learned" class="level2">
+<h2 data-anchor-id="what-i-learned">What I Learned</h2>
+<p>Doing this project reinforced that fairness in healthcare ML isn’t a feature to add at the end — it needs to be part of how you frame the problem from the start. Whose data is missing? Whose outcomes are you measuring? These questions matter as much as model architecture.</p>
 </section>
 <section id="links" class="level2">
 <h2 data-anchor-id="links">Links</h2>
 <ul>
-<li><a href="https://1wrn0x-liam-acosta0lora.shinyapps.io/ScreeningForHighNeedPatients/">Live Application</a></li>
+<li><a href="https://github.com/williamacostalora">GitHub Repo</a></li>
 </ul>
 
 
@@ -268,6 +409,19 @@ ul.task-list li input[type="checkbox"] {
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -332,7 +486,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/williamacostalora\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -663,13 +817,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© William Acosta Lora, 2026</p>
+<p>© William Acosta Lora, 2026. All rights reserved.</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<p><a href="https://github.com/williamacostalora">GitHub</a> · <a href="https://www.linkedin.com/in/william-acosta-lora-2a288829a/">LinkedIn</a> · <a href="mailto:waacosta13@gmail.com">Email</a></p>
+</div>
     <div class="nav-footer-right">
-<p>Site built with <a href="https://quarto.org/">Quarto</a></p>
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
   </div>
 </footer>
@@ -677,4 +831,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

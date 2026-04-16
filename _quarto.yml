@@ -3,8 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "William Acosta Lora"
+  title: "William Acosta Lora | Computer Science & Healthcare Equity"
+  description: "Portfolio of William Acosta Lora - CS student at Macalester College focused on algorithmic bias in healthcare, machine learning, and data science."
+  site-url: "https://williamacostalora.com"
+  repo-url: "https://github.com/williamacostalora/my-portfolio"
+  repo-branch: main
+  open-graph: true
+  twitter-card: true
+
   navbar:
+    title: "William Acosta Lora"
+    logo: images/william_headshot.png
     left:
       - href: index.qmd
         text: Home
@@ -13,15 +22,35 @@ website:
       - href: projects.qmd
         text: Projects
       - href: posts.qmd
-        text: Posts
+        text: Blog
+    right:
+      - icon: github
+        href: https://github.com/williamacostalora
+      - icon: linkedin
+        href: https://www.linkedin.com/in/william-acosta-lora-2a288829a/
+      - icon: envelope
+        href: mailto:waacosta13@gmail.com
 
   page-footer:
     left: |
-      &copy; William Acosta Lora, 2026
+      &copy; William Acosta Lora, 2026. All rights reserved.
+    center: |
+      [GitHub](https://github.com/williamacostalora) · [LinkedIn](https://www.linkedin.com/in/william-acosta-lora-2a288829a/) · [Email](mailto:waacosta13@gmail.com)
     right: |
-      Site built with <a href='https://quarto.org/'>Quarto</a>
+      Built with <a href='https://quarto.org/'>Quarto</a>
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: cosmo
     css: styles.css
+    smooth-scroll: true
+    toc: true
+    toc-depth: 2
+    code-block-bg: true
+    code-block-border-left: true
+    self-contained: false
+
+execute:
+  freeze: auto

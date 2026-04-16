@@ -28,7 +28,7 @@ We used publicly available clinical datasets containing paired pulse oximeter re
 
 ## Results
 
-We replicated findings from peer-reviewed literature showing Black patients were significantly more likely to have hidden hypoxemia — and built a reusable pipeline that can be applied to new clinical datasets.
+We replicated findings from peer-reviewed literature showing Black patients were significantly more likely to have hidden hypoxemia  and built a reusable pipeline that can be applied to new clinical datasets.
 
 ## Links
 

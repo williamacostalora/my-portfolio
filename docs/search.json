@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "William Acosta Lora",
     "section": "",
-    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nHi! I’m William Acosta Lora, a junior at Macalester College studying Computer Science with a minor in Data Science. I grew up in Venezuela and Louisiana, and I’m passionate about using machine learning to address bias in clinical algorithms and expand access to equitable healthcare.\n\n\nMacalester College | St. Paul, MN B.A. in Computer Science, Data Science Minor | Sept 2023 - May 2027\n\n\n\nData, Innovation & Architecture Solutions Intern | Ecolab | Summer 2026\nSoftware Engineering Intern | Medtronic | Previous\nCS Teaching Assistant | Macalester College | Current\n\n\n\nR · Python · SQL · tidymodels · ggplot2 · Flask · React · PyTorch · scikit-learn"
+    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nHi! I’m William Acosta Lora, a junior at Macalester College studying Computer Science with a minor in Data Science. I grew up in Venezuela and Louisiana, and I’m passionate about using machine learning to address bias in clinical algorithms and expand access to equitable healthcare.\n\n\nMacalester College | St. Paul, MN B.A. in Computer Science, Data Science Minor | Sept 2023 - May 2027\n\n\n\nData, Innovation & Architecture Solutions Intern | Ecolab | Summer 2026\nSoftware Engineering Intern | Medtronic | Previous\nCS Teaching Assistant | Macalester College | Current\n\n\n\nLanguages: Python · Java · R · SQL · JavaScript · C\nML/Data: PyTorch · scikit-learn · tidymodels · Pandas · NumPy · Tensorflow\nVisualization: ggplot2 · Matplotlib · Plotly\nWeb: Flask · React · HTML/CSS\nTools: Git · Jupyter · Quarto · Google Colab\n\n\n\nAlgorithmic bias in clinical diagnostics, healthcare equity, and machine learning fairness."
   },
   {
     "objectID": "index.html#education",
@@ -67,7 +67,7 @@
     "href": "projects/pulse-oximeter-bias/index.html#results",
     "title": "Pulse Oximeter Bias Detector",
     "section": "Results",
-    "text": "Results\nWe replicated findings from peer-reviewed literature showing Black patients were significantly more likely to have hidden hypoxemia — and built a reusable pipeline that can be applied to new clinical datasets."
+    "text": "Results\nWe replicated findings from peer-reviewed literature showing Black patients were significantly more likely to have hidden hypoxemia and built a reusable pipeline that can be applied to new clinical datasets."
   },
   {
     "objectID": "projects/pulse-oximeter-bias/index.html#links",
@@ -172,7 +172,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Access Risk Screening System\n\n\n\nR\n\nMachine Learning\n\nData Engineering\n\nHealthcare Systems\n\n\n\nDeployed an ML-powered clinical decision support tool for identifying transportation-based healthcare disparities using EHR data. Placed 1st at ASA DataFest.\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSkin Lesion Classification with Fairness Constraints\n\n\n\nDeep Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a CNN-based classifier to detect skin cancer across skin tones using HAM10000 and DDI datasets.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulse Oximeter Bias Detector\n\n\n\nPython\n\nHealthcare Equity\n\nData Analysis\n\n\n\nAnalyzed racial bias in pulse oximetry readings using clinical data. Placed at Macathon 2025.\n\n\n\n\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Access Risk Screening System\n\n\n\nMachine Learning\n\nPython\n\nHealthcare Equity\n\n\n\nBuilt a machine learning system to identify patients at risk of delayed care due to structural barriers.\n\n\n\n\n\n\nJan 15, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -214,14 +214,14 @@
     "href": "projects/healthcare_access_risk_screening_system/index.html",
     "title": "Healthcare Access Risk Screening System",
     "section": "",
-    "text": "Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.\nThe project placed 1st at ASA DataFest."
+    "text": "Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data."
   },
   {
     "objectID": "projects/healthcare_access_risk_screening_system/index.html#overview",
     "href": "projects/healthcare_access_risk_screening_system/index.html#overview",
     "title": "Healthcare Access Risk Screening System",
     "section": "",
-    "text": "Built and deployed an end-to-end clinical decision support system that predicts patient-level transportation access risk using EHR and geospatial data. Designed to mirror production healthcare tools (e.g., Epic-style workflows), the application enables providers to input patient attributes and receive real-time risk predictions alongside geographic insights.\nThe project placed 1st at ASA DataFest."
+    "text": "Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data."
   },
   {
     "objectID": "projects/healthcare_access_risk_screening_system/index.html#system-architecture",
@@ -256,7 +256,7 @@
     "href": "projects/healthcare_access_risk_screening_system/index.html#results",
     "title": "Healthcare Access Risk Screening System",
     "section": "Results",
-    "text": "Results\n\nAchieved 82% accuracy on unseen patient data\nIdentified transportation access as a dominant predictor of missed/delayed care\nDemonstrated strong signal from ZIP-level socioeconomic features\nDelivered a fully deployed, clinician-facing tool under time constraints"
+    "text": "Results\nThe model successfully identified high-risk patients with an AUC of 0.78 overall, but showed meaningful disparities in recall across demographic groups before mitigation. Reweighting the loss function to balance false negatives across groups improved equalized odds while maintaining reasonable overall performance."
   },
   {
     "objectID": "projects/healthcare_access_risk_screening_system/index.html#impact",
@@ -270,6 +270,48 @@
     "href": "projects/healthcare_access_risk_screening_system/index.html#links",
     "title": "Healthcare Access Risk Screening System",
     "section": "Links",
-    "text": "Links\n\nLive Application"
+    "text": "Links\n\nGitHub Repo"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#problem-statement",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#problem-statement",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Problem Statement",
+    "text": "Problem Statement\nHealthcare access barriers disproportionately affect marginalized communities. Transportation, cost, language, and discrimination all delay care initiation. Early identification of at-risk patients could enable targeted interventions — but most screening tools ignore these structural factors entirely."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#data-methods",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#data-methods",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Data & Methods",
+    "text": "Data & Methods\n\nIntegrated synthetic patient data with social determinants (ZIP code-level transportation access, insurance type, language preference)\nBuilt a logistic regression model with care-delay prediction as the outcome\nConducted fairness audits using group fairness metrics (demographic parity, equalized odds) across race, insurance status, and language groups\nCreated a risk stratification framework to prioritize outreach"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#key-insights",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#key-insights",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nRaw predictive accuracy masks bias in who gets missed by the model\nAccess barriers are structural, not individual — the model needs to reflect that\nRisk stratification tools require explicit fairness constraints, not just algorithmic tweaking"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#what-i-learned",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#what-i-learned",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "What I Learned",
+    "text": "What I Learned\nDoing this project reinforced that fairness in healthcare ML isn’t a feature to add at the end — it needs to be part of how you frame the problem from the start. Whose data is missing? Whose outcomes are you measuring? These questions matter as much as model architecture."
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "Languages: Python · Java · R · SQL · JavaScript · C\nML/Data: PyTorch · scikit-learn · tidymodels · Pandas · NumPy · Tensorflow\nVisualization: ggplot2 · Matplotlib · Plotly\nWeb: Flask · React · HTML/CSS\nTools: Git · Jupyter · Quarto · Google Colab"
+  },
+  {
+    "objectID": "index.html#research-focus",
+    "href": "index.html#research-focus",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "Algorithmic bias in clinical diagnostics, healthcare equity, and machine learning fairness."
   }
 ]
