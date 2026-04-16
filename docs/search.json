@@ -28,11 +28,18 @@
     "text": "Data, Innovation & Architecture Solutions Intern | Ecolab | Summer 2026\nSoftware Engineering Intern | Medtronic | Previous\nCS Teaching Assistant | Macalester College | Current"
   },
   {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
     "title": "William Acosta Lora",
     "section": "",
-    "text": "R · Python · SQL · tidymodels · ggplot2 · Flask · React · PyTorch · scikit-learn"
+    "text": "Languages: Python · Java · R · SQL · JavaScript · C\nML/Data: PyTorch · scikit-learn · tidymodels · Pandas · NumPy · Tensorflow\nVisualization: ggplot2 · Matplotlib · Plotly\nWeb: Flask · React · HTML/CSS\nTools: Git · Jupyter · Quarto · Google Colab"
+  },
+  {
+    "objectID": "index.html#research-focus",
+    "href": "index.html#research-focus",
+    "title": "William Acosta Lora",
+    "section": "",
+    "text": "Algorithmic bias in clinical diagnostics, healthcare equity, and machine learning fairness."
   },
   {
     "objectID": "projects/pulse-oximeter-bias/index.html",
@@ -73,6 +80,62 @@
     "objectID": "projects/pulse-oximeter-bias/index.html#links",
     "href": "projects/pulse-oximeter-bias/index.html#links",
     "title": "Pulse Oximeter Bias Detector",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repo"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html",
+    "href": "projects/healthcare_access_risk_screening_system/index.html",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "",
+    "text": "Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#overview",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#overview",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "",
+    "text": "Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#problem-statement",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#problem-statement",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Problem Statement",
+    "text": "Problem Statement\nHealthcare access barriers disproportionately affect marginalized communities. Transportation, cost, language, and discrimination all delay care initiation. Early identification of at-risk patients could enable targeted interventions — but most screening tools ignore these structural factors entirely."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#data-methods",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#data-methods",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Data & Methods",
+    "text": "Data & Methods\n\nIntegrated synthetic patient data with social determinants (ZIP code-level transportation access, insurance type, language preference)\nBuilt a logistic regression model with care-delay prediction as the outcome\nConducted fairness audits using group fairness metrics (demographic parity, equalized odds) across race, insurance status, and language groups\nCreated a risk stratification framework to prioritize outreach"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#results",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#results",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Results",
+    "text": "Results\nThe model successfully identified high-risk patients with an AUC of 0.78 overall, but showed meaningful disparities in recall across demographic groups before mitigation. Reweighting the loss function to balance false negatives across groups improved equalized odds while maintaining reasonable overall performance."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#key-insights",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#key-insights",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nRaw predictive accuracy masks bias in who gets missed by the model\nAccess barriers are structural, not individual — the model needs to reflect that\nRisk stratification tools require explicit fairness constraints, not just algorithmic tweaking"
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#what-i-learned",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#what-i-learned",
+    "title": "Healthcare Access Risk Screening System",
+    "section": "What I Learned",
+    "text": "What I Learned\nDoing this project reinforced that fairness in healthcare ML isn’t a feature to add at the end — it needs to be part of how you frame the problem from the start. Whose data is missing? Whose outcomes are you measuring? These questions matter as much as model architecture."
+  },
+  {
+    "objectID": "projects/healthcare_access_risk_screening_system/index.html#links",
+    "href": "projects/healthcare_access_risk_screening_system/index.html#links",
+    "title": "Healthcare Access Risk Screening System",
     "section": "Links",
     "text": "Links\n\nGitHub Repo"
   },
@@ -208,110 +271,5 @@
     "title": "About Me",
     "section": "Outside Class",
     "text": "Outside Class\nI speak English, Spanish, and high-intermediate French. I like thinking about the history and philosophy of science, exploring questions at the edge of religion and culture, weighlifting, and finding good coffee shops to work in."
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html",
-    "href": "projects/healthcare_access_risk_screening_system/index.html",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "",
-    "text": "Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data."
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#overview",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#overview",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "",
-    "text": "Delayed healthcare access isn’t just an individual problem — it’s driven by structural factors that compound for certain populations. This project developed a risk screening tool to identify patients vulnerable to delayed care by combining clinical and social determinants of health (SDOH) data."
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#system-architecture",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#system-architecture",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "System Architecture",
-    "text": "System Architecture\n\nData Layer: Integrated multiple large-scale EHR datasets (demographics, diagnoses, SDOH, utilization) with ZIP code–level geospatial data\nFeature Engineering Pipeline:\n\nDistance to nearest providers by specialty\nTransportation access proxies (vehicle access, rural/urban classification)\nCare patterns (ER utilization, follow-up engagement)\n\nModel Layer: Interpretable decision tree classifier built with tidymodels\nServing Layer: Real-time inference via R/Shiny with sub-second latency for interactive use"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#machine-learning",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#machine-learning",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Machine Learning",
-    "text": "Machine Learning\n\nTrained decision tree models on &gt;1,000 patient records\nEvaluated on held-out (unseen) test set:\n\nAccuracy: 82%\nAUC: ~0.85\n\nValidation strategy:\n\nStratified train/test split to preserve class balance\nk-fold cross-validation (k=5) for model selection and tuning\n\nOptimized for interpretability + clinical usability over black-box performance"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#production-design",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#production-design",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Production Design",
-    "text": "Production Design\n\nLow-latency inference: Preloaded model objects for real-time predictions (&lt;100ms per request)\nModular pipeline:\n\nData preprocessing → feature engineering → model inference → UI rendering\n\nReproducibility: Encapsulated data transformations and modeling steps using tidymodels workflows\nScalability considerations:\n\nDesigned to generalize to new hospital systems with minimal feature remapping\nPipeline supports retraining on updated EHR datasets"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#product-features",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#product-features",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Product Features",
-    "text": "Product Features\n\nReal-Time Risk Screener\n\nInputs: race, age, ZIP code, ER usage, patient engagement signals\nOutputs:\n\nRisk classification (Low / Moderate / High)\nProbability score\nPopulation-level comparison\n\nGenerates actionable recommendations for providers\n\n\n\nGeospatial Intelligence Layer\n\nInteractive maps displaying:\n\nPatient distribution\nProvider density by specialty\nTransportation-insecure regions\n\nEnables identification of healthcare deserts and access gaps\n\n\n\nModel Interpretability\n\nVisualized full decision tree used in predictions\nHighlighted key splits (e.g., ZIP-level risk, SDOH indicators)\nDesigned for transparency in high-stakes decision environments"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#results",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#results",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Results",
-    "text": "Results\nThe model successfully identified high-risk patients with an AUC of 0.78 overall, but showed meaningful disparities in recall across demographic groups before mitigation. Reweighting the loss function to balance false negatives across groups improved equalized odds while maintaining reasonable overall performance."
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#impact",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#impact",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Impact",
-    "text": "Impact\nThis project demonstrates how ML systems can be operationalized in healthcare settings to surface disparities and guide interventions. The system provides a scalable framework for identifying high-risk patients and integrating data-driven insights into clinical workflows."
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#links",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#links",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Links",
-    "text": "Links\n\nGitHub Repo"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#problem-statement",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#problem-statement",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Problem Statement",
-    "text": "Problem Statement\nHealthcare access barriers disproportionately affect marginalized communities. Transportation, cost, language, and discrimination all delay care initiation. Early identification of at-risk patients could enable targeted interventions — but most screening tools ignore these structural factors entirely."
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#data-methods",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#data-methods",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Data & Methods",
-    "text": "Data & Methods\n\nIntegrated synthetic patient data with social determinants (ZIP code-level transportation access, insurance type, language preference)\nBuilt a logistic regression model with care-delay prediction as the outcome\nConducted fairness audits using group fairness metrics (demographic parity, equalized odds) across race, insurance status, and language groups\nCreated a risk stratification framework to prioritize outreach"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#key-insights",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#key-insights",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "Key Insights",
-    "text": "Key Insights\n\nRaw predictive accuracy masks bias in who gets missed by the model\nAccess barriers are structural, not individual — the model needs to reflect that\nRisk stratification tools require explicit fairness constraints, not just algorithmic tweaking"
-  },
-  {
-    "objectID": "projects/healthcare_access_risk_screening_system/index.html#what-i-learned",
-    "href": "projects/healthcare_access_risk_screening_system/index.html#what-i-learned",
-    "title": "Healthcare Access Risk Screening System",
-    "section": "What I Learned",
-    "text": "What I Learned\nDoing this project reinforced that fairness in healthcare ML isn’t a feature to add at the end — it needs to be part of how you frame the problem from the start. Whose data is missing? Whose outcomes are you measuring? These questions matter as much as model architecture."
-  },
-  {
-    "objectID": "index.html#technical-skills",
-    "href": "index.html#technical-skills",
-    "title": "William Acosta Lora",
-    "section": "",
-    "text": "Languages: Python · Java · R · SQL · JavaScript · C\nML/Data: PyTorch · scikit-learn · tidymodels · Pandas · NumPy · Tensorflow\nVisualization: ggplot2 · Matplotlib · Plotly\nWeb: Flask · React · HTML/CSS\nTools: Git · Jupyter · Quarto · Google Colab"
-  },
-  {
-    "objectID": "index.html#research-focus",
-    "href": "index.html#research-focus",
-    "title": "William Acosta Lora",
-    "section": "",
-    "text": "Algorithmic bias in clinical diagnostics, healthcare equity, and machine learning fairness."
   }
 ]
